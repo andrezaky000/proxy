@@ -14,8 +14,8 @@
   ],
   "functions": {
     "api/proxy.js": {
-      "maxDuration": 60,  // Set the max duration for the function
-      "memory": 1024        // Allocate memory (optional)
+      "maxDuration": 60,  
+      "memory": 1024        
     }
   }
 }
