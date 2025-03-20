@@ -1,9 +1,17 @@
 {
   "version": 2,
   "functions": {
-    "api/*": {
-      "maxDuration": 60,
-      "memory": 1024
+    "api/long-process.js": {
+      "maxDuration": 60,  // Max time for the long process (60 seconds)
+      "memory": 1024      // Memory allocation
+    },
+    "api/another-long-process.js": {
+      "maxDuration": 60,  // Max time for another long process
+      "memory": 1024      // Memory allocation
+    },
+    "api/proxy.js": {
+      "maxDuration": 60,  // Max time for the proxy file
+      "memory": 1024      // Memory allocation
     }
   }
 }
