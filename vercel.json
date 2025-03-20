@@ -1,11 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "api/your-function.js": {
-      "maxDuration": 60,
-      "memory": 1024
-    },
-    "api/another-function.js": {
+    "api/*": {
       "maxDuration": 60,
       "memory": 1024
     }
