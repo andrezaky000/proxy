@@ -13,3 +13,10 @@
     }
   ]
 }
+{
+  "functions": {
+    "api/your-function.js": {
+      "maxDuration": 3000
+    }
+  }
+}
