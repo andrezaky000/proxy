@@ -9,15 +9,5 @@
       "maxDuration": 60,
       "memory": 1024
     }
-  },
-  "routes": [
-    {
-      "src": "/api/your-function",
-      "dest": "/api/your-function.js"
-    },
-    {
-      "src": "/api/another-function",
-      "dest": "/api/another-function.js"
-    }
-  ]
+  }
 }
