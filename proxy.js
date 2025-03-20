@@ -14,6 +14,6 @@ const server = http.createServer((req, res) => {
     req.pipe(proxyReq, { end: true });
 });
 
-server.listen(3000, () => {
-    console.log('Proxy server running on http://localhost:3000');
+server.listen(process.env.PORT || 3000, () => {
+    console.log('Proxy server is running');
 });
