@@ -1,17 +1,21 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "proxy.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "proxy.js"
+    }
+  ],
   "functions": {
-    "api/long-process.js": {
-      "maxDuration": 60,  // Max time for the long process (60 seconds)
-      "memory": 1024      // Memory allocation
-    },
-    "api/another-long-process.js": {
-      "maxDuration": 60,  // Max time for another long process
-      "memory": 1024      // Memory allocation
-    },
     "api/proxy.js": {
-      "maxDuration": 60,  // Max time for the proxy file
-      "memory": 1024      // Memory allocation
+      "maxDuration": 60,  // Set the max duration for the function
+      "memory": 1024        // Allocate memory (optional)
     }
   }
 }
