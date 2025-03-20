@@ -1,16 +1,15 @@
 {
-{
   "version": 2,
-  "builds": [
-    {
-      "src": "proxy.js",
-      "use": "@vercel/node"
+  "functions": {
+    "api/proxy.js": {
+      "maxDuration": 60,  // Max execution time in seconds
+      "memory": 1024      // Memory allocation in MB (1GB)
     }
-  ],
+  },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "proxy.js"
+      "dest": "api/proxy.js"
     }
   ]
 }
